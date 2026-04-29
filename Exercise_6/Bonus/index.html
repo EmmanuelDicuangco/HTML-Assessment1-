@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Colour Guessing Game</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Game container -->
+    <div class="game-box">
+
+        <!-- Title -->
+        <h1>RGB Colour Guessing Game</h1>
+
+        <!-- RGB value shown -->
+        <h2 id="rgbValue">rgb(0, 0, 0)</h2>
+
+        <!-- Lives and score -->
+        <div class="info">
+            <p>Lives: <span id="lives">3</span></p>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+
+        <!-- Colour options -->
+        <div class="colors">
+            <div class="color-btn" onclick="checkAnswer(this)"></div>
+            <div class="color-btn" onclick="checkAnswer(this)"></div>
+            <div class="color-btn" onclick="checkAnswer(this)"></div>
+        </div>
+
+        <!-- Message -->
+        <p id="message">Choose the correct colour!</p>
+
+        <!-- Replay button -->
+        <button onclick="restartGame()">Play Again</button>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+
+</body>
+</html>
